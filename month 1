@@ -1,0 +1,118 @@
+Month 1 – Python Basics and Data Manipulation (Summary)
+
+Week 1: Introduction to Python Programming
+
+In this week, I learned the fundamentals of Python programming. I studied variables, data
+types, operators, input/output, conditional statements (if-else), and loops (for and while).
+These concepts help in writing logical programs and automating tasks. I also created basic
+programs such as a temperature converter and a simple calculator.
+For the client project, I created a data processing script that calculates the average
+temperature from a dataset. This helped me understand how Python can be used for basic
+data analysis tasks.
+
+Python Script:
+
+temperatures = [30, 32, 31, 29, 33, 34, 30]
+total = sum(temperatures)
+count = len(temperatures)
+average = total / count
+print("Temperature Readings:", temperatures)
+print("Average Temperature:", average, "°C")
+
+Concepts Used
+ Variables
+ Lists
+ Arithmetic operators
+ Built-in functions (sum(), len())
+
+Week 2: Data Structures and Functions
+
+During this week, I learned about important Python data structures such as lists, tuples,
+dictionaries, and sets. I also studied functions, lambda functions, recursion, and list
+comprehension, which help in organizing and simplifying code.
+In the hands-on tasks, I practiced data transformations such as calculating the sum of
+squares and filtering values. For the client project, I developed a data cleaning script that
+removes duplicate values and filters unwanted data, which is an important step in data
+preprocessing.
+
+# Remove duplicates and filter numbers greater than 10
+data = [5, 10, 15, 20, 10, 5, 25, 30]
+# Remove duplicates
+unique_data = list(set(data))
+# Filter values greater than 10
+filtered_data = [x for x in unique_data if x > 10]
+print("Original Data:", data)
+print("Unique Data:", unique_data)
+print("Filtered Data (>10):", filtered_data)
+Concepts Used
+ Lists
+ Sets
+ List comprehension
+ Data filtering
+
+Week 3: NumPy and Pandas for Data Manipulation
+
+This week focused on data manipulation using NumPy and Pandas. I learned about NumPy
+arrays, mathematical operations, and broadcasting, which are useful for numerical
+computations.
+I also studied Pandas DataFrames and Series, along with indexing, filtering, and grouping
+data. For the client project, I worked with a dataset to remove missing values and calculate
+averages, which helped me understand real-world data cleaning and analysis.
+
+import pandas as pd
+# Sample dataset
+data = {
+"Name": ["A", "B", "C", "D", "E"],
+"Score": [85, None, 90, 88, None]
+}
+df = pd.DataFrame(data)
+
+print("Original Dataset:")
+print(df)
+# Remove missing values
+clean_data = df.dropna()
+# Calculate average score
+average_score = clean_data["Score"].mean()
+print("\nCleaned Dataset:")
+print(clean_data)
+print("\nAverage Score:", average_score)
+Concepts Used
+ DataFrames
+ Removing missing values
+ Mean calculation
+
+Week 4: Data Visualization
+
+In this week, I learned how to visualize data using Matplotlib and Seaborn. I studied
+different types of plots such as line plots, bar charts, scatter plots, histograms, heatmaps,
+and pairplots.
+For the client project, I created a data visualization dashboard to analyze relationships
+between different features in a dataset. The dashboard included scatter plots and
+histograms, which help in understanding patterns and trends in the data.
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+# Sample dataset
+data = {
+"Hours_Studied": [1,2,3,4,5,6,7,8],
+"Scores": [50,55,60,65,70,75,80,85]
+}
+
+df = pd.DataFrame(data)
+# Scatter Plot
+sns.scatterplot(x="Hours_Studied", y="Scores", data=df)
+plt.title("Study Hours vs Scores")
+plt.xlabel("Hours Studied")
+plt.ylabel("Scores")
+plt.show()
+Concepts Used
+ Scatter plot
+ Data visualization
+ Feature relationship analysis
+
+Overall Learning Outcome
+
+By completing this month’s tasks, I developed a strong foundation in Python programming,
+data manipulation, and data visualization. I learned how to clean, process, analyze, and
+visualize data, which are essential skills for data analysis and data science projects.
