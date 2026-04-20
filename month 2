@@ -1,0 +1,84 @@
+TASK 3: Customer Churn Data Preparation & EDA
+🎯 Objective
+
+To prepare telecom customer data for machine learning by performing:
+
+Data cleaning
+Feature engineering
+Exploratory Data Analysis (EDA)
+📂 Dataset
+Dataset: Telco Customer Churn Dataset
+Contains customer demographics, services, billing, and churn status.
+🛠️ Technologies Used
+Python 🐍
+Pandas & NumPy
+Seaborn & Matplotlib
+Scikit-learn
+⚙️ Project Workflow
+1. Data Understanding
+Loaded dataset using Pandas
+Checked structure using .info() and .describe()
+Identified missing and inconsistent values
+2. Data Cleaning
+Converted TotalCharges to numeric
+Handled missing values (drop/impute)
+Cleaned invalid entries
+3. Feature Engineering
+Created:
+TenureGroup (customer lifecycle buckets)
+AvgMonthlySpend
+Converted Yes/No → 1/0
+Applied one-hot encoding to categorical variables
+4. Exploratory Data Analysis (EDA)
+Churn distribution using countplot
+Contract vs churn analysis
+Correlation heatmap
+Monthly charges vs churn (boxplot)
+📊 Key Insights
+📉 Customers with month-to-month contracts churn the most
+💰 Higher monthly charges lead to higher churn probability
+⏳ Long-term customers are less likely to churn
+🌐 Fiber optic users show higher churn rates
+🧾 Paperless billing users churn slightly more
+📁 Deliverables
+✔️ Cleaned dataset (cleaned_churn_data.csv)
+✔️ Jupyter Notebook (churn_analysis.ipynb)
+✔️ Visualizations & insights
+📗 TASK 4: Netflix Titles Dataset – EDA & Insights
+🎯 Objective
+
+To explore Netflix content data and identify:
+
+Viewing trends
+Content distribution
+Popular genres and countries
+📂 Dataset
+Dataset: Netflix Titles Dataset
+Contains details about movies and TV shows on Netflix.
+🛠️ Technologies Used
+Python 🐍
+Pandas & NumPy
+Matplotlib & Seaborn
+⚙️ Project Workflow
+1. Data Cleaning
+Converted date_added to datetime
+Filled missing values (director, cast, country)
+Removed inconsistencies
+2. Feature Engineering
+Extracted:
+year_added
+release_decade
+Created:
+is_movie (binary classification)
+Analyzed country popularity
+3. Exploratory Data Analysis (EDA)
+Pie chart: Movies vs TV shows
+Line plot: Content growth over time
+Bar chart: Top genres
+Heatmap: Country-wise distribution
+📊 Key Insights
+🎬 Movies dominate Netflix content (~70%)
+📈 Content growth increased significantly after 2016
+🎭 Most popular genres: Drama, Comedy, Documentaries
+🌍 USA is the leading content producer
+📺 TV shows are steadily increasing
